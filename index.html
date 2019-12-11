@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CookieSide Тестовое задание</title>
+	<link rel="stylesheet" href="dest/css/style.min.css">
+</head>
+<body>
+	<header class="header">
+		<h1 class="header__title">Cookie Side Autocomplete</h1>
+	</header>
+	<main class="main">
+		<div class="autocomplete">
+			<input class="autocomplete__input" type="text" placeholder="Roboto">
+			<div class="autocomplete__line"></div>
+			<ul class="autocomplete__list"></ul>
+		</div>
+	</main>
+	<footer class="footer">
+		<p class="footer__copy">
+			Developed by <a class="footer__mail" href="mailto:stnkvld@gmail.com">Vladislav Sotnikov</a>
+		</p>
+	</footer>
+	<template id="autocomplete__template-item">
+		<li class="autocomplete__list-item">
+			<input class="autocomplete__radio" type="radio" name="autocomplete-radio-item">
+			<label class="autocomplete__label"></label>
+		</li>
+	</template>
+	<template id="autocomplete__null-result">
+		<li class="autocomplete__list-item autocomplete__list-item--hide">
+			<label class="autocomplete__label">Нет результатов</label>
+		</li>
+	</template>
+	<script src="dest/js/script.min.js"></script>
+</body>
+</html>
